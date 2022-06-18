@@ -21,8 +21,12 @@ namespace CRUD_API_CONFERIR.Model
         [BsonElement("CNPJ/CPF")]
         public string Cpf { get; set; } = null!;
 
+        [BsonElement("Endereço")]
+        public string Endereço { get; set; } = null!;
+
         [BsonElement("Status")]
-        public bool Active { get; set; } 
+        public bool Active { get; set; } = true;
+
 
 
 
