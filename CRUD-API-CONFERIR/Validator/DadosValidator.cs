@@ -25,7 +25,9 @@ namespace CRUD_API_CONFERIR.Validator
                 .WithMessage("O email ele está vazio ou nulo.")
             .EmailAddress()
                 .WithMessage("O email não é valido");
-
+            
+            RuleFor(x => x.Telefone).NotEmpty().NotNull()
+                .WithMessage("O número telefonico não pode estar vazio");
         }
 
         protected bool NomeValido(string name)
